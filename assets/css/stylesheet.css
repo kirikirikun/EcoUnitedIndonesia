@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  font-family: "Nunito Sans", "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: aliceblue;
+}
+nav {
+  display: flex;
+}
+
+/*Logo*/
+.logo {
+  width: 20%;
+  display: flex;
+  margin: auto 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.logo img {
+  margin: 0 auto;
+}
+
+.logo h1 {
+  color: #508d4e;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/*navbar*/
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+nav ul li > a {
+  display: block;
+  padding: 20px;
+  font-size: 2vw;
+  color: #508d4e;
+}
+/*motto*/
+.motto {
+  position: relative;
+  font-size: 3vw;
+}
+.child-motto {
+  position: relative;
+  z-index: 1;
+}
+.child-motto h1 {
+  position: absolute;
+  text-align: center;
+  line-height: 7vw;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 0px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(26, 83, 25, 0.5);
+}
+.button-motto {
+  display: block;
+  background-color: antiquewhite;
+  color: #508d4e;
+  border-radius: 10px;
+  padding: 2%;
+}
+.child-motto .button-motto {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+/*tips*/
+.container-tips h1 {
+  font-size: 5vw;
+  font-weight: bolder;
+  color: #508d4e;
+  text-shadow: 4px 3px 7px;
+  text-align: center;
+  margin: 2vw;
+}
+.list1 {
+  margin-top: 4vw;
+}
+.list1 img {
+  float: right;
+  border-radius: 45px 0px 0px 45px;
+  height: 40vw;
+}
+.list1 h2 {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5vw;
+}
+.list1 li {
+  padding-left: 3vw;
+  font-size: 2vw;
+  margin-top: 3vw;
+}
+
+.list2 {
+  margin-top: 4vw;
+}
+.list2 img {
+  float: left;
+  height: 40vw;
+  margin-right: 3vw;
+  border-radius: 0px 35px 35px 0px;
+}
+.list2 h2 {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5vw;
+}
+.list2 li {
+  font-size: 2vw;
+  margin-top: 3vw;
+}
+
+/*area berita dan acara*/
+.title-news {
+  text-align: center;
+  margin: 3vw;
+  font-size: 5vw;
+  font-weight: bold;
+  color: #508d4e;
+  text-shadow: 4px 3px 7px;
+}
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  width: 90%;
+  justify-content: space-between;
+}
+.container-news {
+  width: 250px;
+  border-radius: 21px 21px 21px 21px;
+  border: 1px solid black;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.container-news h2 {
+  font-size: 2vw;
+  padding-top: 1.5vw;
+  padding-left: 3vw;
+  padding-right: 30px;
+  margin-bottom: 2vw;
+}
+.container-news h2 > a,
+p > a {
+  color: black;
+}
+
+.container-news h3 {
+  font-size: 1.5vw;
+  padding-left: 3vw;
+  padding-right: 2vw;
+}
+
+.container-news p {
+  display: block;
+  padding-top: 2vw;
+  padding-bottom: 15px;
+  padding-left: 3vw;
+}
+
+.news1 p {
+  margin-top: 2vw;
+}
+.news2 p {
+  margin-top: -1vw;
+}
+.news3 p {
+  margin-top: 1vw;
+}
+.news4 p {
+  margin-top: 4vw;
+}
+
+/*Galeri*/
+.container-galeri {
+  text-align: center;
+  margin-top: 3vw;
+  color: #508d4e;
+  text-shadow: 4px 3px 7px;
+  font-weight: bold;
+  font-size: 5vw;
+}
+.container {
+  padding: 2rem;
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5 rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+/*Footer*/
+footer {
+  margin-top: 1.5vw;
+  padding-top: 0.4vw;
+  height: 20vw;
+  background-color: #508d4e;
+  display: flex;
+  color: #fff;
+}
+
+.footer-logo {
+  margin-left: 4%;
+  display: flex;
+  width: 50%;
+  padding-left: 2%;
+}
+.footer-logo {
+  font-size: 1.7vw;
+  line-height: 2.3vw;
+}
+.footer-isi {
+  margin-top: 1.5%;
+}
+.footer-isi article {
+  margin-top: 0.4vw;
+}
+.footer-isi h3 {
+  font-size: 2vw;
+}
+.footer-isi a {
+  color: #fff;
+  font-weight: bold;
+}
+.footer-isi p {
+  line-height: 2.9vw;
+  font-size: 1.5vw;
+}
+
+cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  zoom: 1;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+    margin: auto;
+    display: none;
+  }
+  .logo h1 {
+    line-height: 25px;
+  }
+  .logo img {
+    width: 10vw;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container-tips h1{
+    font-size: 10vw;
+  }
+  .news {
+    justify-content: center;
+  }
+  .container-news {
+    width: 150px;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  .container-title-news {
+    font-size: 10vw;
+  }
+  .container-news h2 {
+    font-size: 3.6vw;
+  }
+  .container-news h3 {
+    font-size: 3vw;
+  }
+  .container-news img {
+    width: 50vw;
+  }
+  .container-galeri {
+    padding-top: 2vw;
+    font-size: 10vw;
+  }
+
+  footer {
+    height: 25.6vw;
+  }
+  .footer-logo {
+    line-height: 2.8vw;
+  }
+  .footer-isi {
+    margin-top: 2vw;
+  }
+  .footer-isi p {
+    line-height: 5vw;
+  }
+}

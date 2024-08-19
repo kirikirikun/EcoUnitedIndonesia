@@ -1,0 +1,15 @@
+@media screen and (min-width: 481px)and (max-width:767){
+  nav{
+    flex-direction: row;
+    background-color: yellow;
+  }
+
+  .logo{
+    background-color: aqua;
+  }
+
+  nav ul li>a{
+    font-size: 1em;
+
+  }
+}
